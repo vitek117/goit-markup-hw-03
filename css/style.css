@@ -13,92 +13,81 @@
   --primary-text-color: #757575;
   --white-color: #ffffff;
   --footer-connection-text-color: rgba(255, 255, 255, 0.6);
-  --backgrond-section-color: #F5F4FA;
+  --backgrond-section-color: #f5f4fa;
+  --footer-color: #2f303a;
 }
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--primary-text-color);
-  letter-spacing: 0.03em;
+.link {
+  text-decoration: none;
 }
-.container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
   color: var(--accent-color);
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
 }
-.logo-black {
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
+/* ----------------header------------------- */
+.header-logo {
   color: #000;
 }
-/* site-naw */
-.site-naw .link {
-  color: var(--dark-text-color);
+.header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
-  text-decoration: none;
-}
-
-.list{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-}
-/* .links {
-  text-decoration: none;
-} */
-.contacts {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  text-decoration: none;
-}
-.contacts:focus,
-.contacts:hover {
-  color: var(--accent-color);
+  color: var(--dark-text-color);
 }
 
-.site-naw .link:hover,
-.site-naw .link:focus {
+.header-link:focus,
+.header-link:hover,
+.current,
+.header-tel-link:focus,
+.header-tel-link:hover {
   color: var(--accent-color);
 }
-.site-naw .link.current {
-  color: var(--accent-color);
+.header-tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: var(--primary-text-color);
 }
 
-/* section_1_герой */
-
-.section-hero{
+/* ---------------hero---------------------- */
+.hero {
+  background-color: var(--footer-color);
   text-align: center;
   margin-bottom: 94px;
 }
-
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  background-color: #2F303A;
-  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  
+  color: var(--white-color);
+  margin-top: 0;
+  margin-bottom: 30px;
 }
-
-
-/* button */
-.hero-but {
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
   padding: 10px 32px;
   font-size: 16px;
   line-height: 1.87;
@@ -108,89 +97,93 @@ body {
   border: 1px solid transparent;
   color: var(--white-color);
   background-color: var(--accent-color);
-
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
 }
-
-.hero-but:hover,
-.hero-but:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: var(--white-color);
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-/* section */
-.section-advantage {
-  color: var(--dark-text-color);
+/* --------------advantages-------------- */
+.advantages-skills {
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--dark-text-color);
 }
-.section-text {
+.advantages-text {
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
-.section-title {
-  color: var(--dark-text-color);
+/* --------------work-------------------- */
+.work-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-
-/* section-4 command */
-.command {
+  letter-spacing: 0.03em;
   color: var(--dark-text-color);
+}
+/* --------------command-------------- */
+.command-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-text-color);
+}
+.command-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.2;
   text-align: center;
-}
-.position {
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-}
-.footer-addres {
-  background-color: #2F303A;
-  color: var(--white-color);
-  font-size: 14px;
-  line-height: 1.7;
-  text-decoration: none;
-  font-weight: normal;
-  font-style: normal;
-}
-.footer-connection {
-  background-color: #2F303A;
-  color: var(--footer-connection-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-  text-decoration: none;
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* portfolio */
-.works-title {
-  color: var(--dark-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-}
-
-.works-text {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.87;
   letter-spacing: 0.03em;
-  text-decoration: none;
+  color: var(--dark-text-color);
+}
+.command-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* ---------------footer------------------ */
+.footer {
+  background-color: var(--footer-color);
+}
+.footer-address {
+  font-style: normal;
+}
+.footer-logo {
+  color: var(--white-color);
+}
+.footer-link-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-connection-text-color);
 }
 
+/* -----------portfolio--------------------- */
+/* -----------portfolio filter----------------- */
+.filter {
+}
 
-/* Portfolio */
-/* button portfolio */
-.filter-butt {
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
   min-width: 73px;
   padding: 6px 22px;
   color: var(--dark-text-color);
@@ -199,13 +192,24 @@ body {
   line-height: 1.6;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
   border: transparent;
 }
 
-.filter-butt:hover,
-.filter-butt:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+.works-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--dark-text-color);
+}
+.works-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
