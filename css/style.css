@@ -15,6 +15,13 @@
   --footer-connection-text-color: rgba(255, 255, 255, 0.6);
   --backgrond-section-color: #f5f4fa;
   --footer-color: #2f303a;
+  --background-color: #e5e5e5;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 .link {
   text-decoration: none;
@@ -35,14 +42,12 @@ body {
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
-}
 
 /* ----------------header------------------- */
+.header {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 .header-logo {
   color: #000;
 }
@@ -75,15 +80,14 @@ body {
   margin-bottom: 94px;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 .hero-btn {
   font-family: inherit;
@@ -106,7 +110,13 @@ body {
 }
 
 /* --------------advantages-------------- */
+.advantages {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 .advantages-skills {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -121,7 +131,13 @@ body {
   color: var(--primary-text-color);
 }
 /* --------------work-------------------- */
+.work {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 .work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -130,13 +146,23 @@ body {
   color: var(--dark-text-color);
 }
 /* --------------command-------------- */
+.command {
+  background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .command-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text-color);
+}
+.command-item {
+  
 }
 .command-name {
   font-weight: 500;
@@ -155,6 +181,8 @@ body {
 }
 /* ---------------footer------------------ */
 .footer {
+  padding: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-color);
 }
 .footer-address {
@@ -180,7 +208,10 @@ body {
 /* -----------portfolio filter----------------- */
 .filter {
 }
-
+.filter-list {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
@@ -200,7 +231,12 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+.works-list {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 .works-title {
+  padding: 0 0 0 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -208,6 +244,7 @@ body {
   color: var(--dark-text-color);
 }
 .works-text {
+  padding: 0 0 0 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
