@@ -37,7 +37,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 .link {
   text-decoration: none;
@@ -224,7 +223,7 @@ padding-bottom: 32px;
 }
 /* --------------command-------------- */
 .command {
-  background-color: var(--background-color);
+  background-color: var(--backgrond-section-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -240,8 +239,14 @@ padding-bottom: 32px;
 }
 .command-list {
   display: flex;
+  margin-left: -30px;
 }
 .command-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+.comand-tumb {
+  padding: 30px 0;
 }
 .command-name {
   font-weight: 500;
@@ -264,19 +269,23 @@ padding-bottom: 32px;
   padding-bottom: 60px;
   background-color: var(--footer-color);
 }
+
 .footer-address {
   font-style: normal;
+  padding: 20px 0;
 }
 .footer-logo {
   color: var(--white-color);
 }
 .footer-link-address {
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
 .footer-link {
+  margin-top: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -286,6 +295,8 @@ padding-bottom: 32px;
 /* -----------portfolio--------------------- */
 /* -----------portfolio filter----------------- */
 .filter {
+  margin-top: 94px;
+  margin-bottom: 34px;
 }
 .filter-list {
   margin-top: 0;
@@ -294,7 +305,7 @@ padding-bottom: 32px;
   justify-content: center;
 }
 .filter-item:not(:last-child) {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 .filter-btn {
   font-family: inherit;
@@ -320,10 +331,17 @@ padding-bottom: 32px;
 .works-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .works-item {
-  outline: 1px solid blue;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.works-tumb {
+  padding: 20px 0;
 }
 .works-title {
   font-weight: 700;
