@@ -138,7 +138,8 @@ padding-bottom: 32px;
 .hero {
   background-color: var(--footer-color);
   text-align: center;
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -177,6 +178,7 @@ padding-bottom: 32px;
 /* --------------advantages-------------- */
 .advantages {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .advantages-list {
   display: flex;
@@ -190,29 +192,26 @@ padding-bottom: 32px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-text-color);
 }
 .advantages-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
 /* --------------work-------------------- */
 .work {
-  padding: 94px 0;
+  padding-bottom: 94px;
 }
 
 .work-title {
-  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--dark-text-color);
 }
 .work-list {
@@ -234,7 +233,6 @@ padding-bottom: 32px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--dark-text-color);
 }
 .command-list {
@@ -254,14 +252,14 @@ padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--dark-text-color);
 }
 .command-text {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
 /* ---------------footer------------------ */
@@ -275,8 +273,9 @@ padding-bottom: 32px;
   font-style: normal;
   padding: 20px 0;
 }
+.footer-item,
 .footer-item {
-  margin-bottom: 9px;
+  margin-top: 9px;
 }
 .footer-logo {
   color: var(--white-color);
@@ -285,21 +284,21 @@ padding-bottom: 32px;
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+
   color: var(--white-color);
 }
 .footer-link {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+
   color: var(--footer-connection-text-color);
 }
 
 /* -----------portfolio--------------------- */
 /* -----------portfolio filter----------------- */
 .filter {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .filter-list {
   margin-bottom: 50px;
@@ -318,7 +317,7 @@ padding-bottom: 32px;
   background-color: var(--backgrond-section-color);
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0.03em;
+
   border-radius: 4px;
   border: transparent;
 }
@@ -357,7 +356,7 @@ padding-bottom: 32px;
 .works-text {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
 .works-content {
